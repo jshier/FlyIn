@@ -1,0 +1,1555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C7EBC1436197BD5DF94A009 /* Pods_FlyInNetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06D7661479D79BF94D6807 /* Pods_FlyInNetworkingTests.framework */; };
+		319A9E7E1F20519700EE28CF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319A9E7D1F20519700EE28CF /* Router.swift */; };
+		319A9E801F20565D00EE28CF /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319A9E7F1F20565D00EE28CF /* NetworkManagerTests.swift */; };
+		31D9994B1F1C4027002BA819 /* RawResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D9994A1F1C4027002BA819 /* RawResponses.swift */; };
+		31D9994D1F1C43A1002BA819 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D9994C1F1C43A1002BA819 /* Location.swift */; };
+		31D9994F1F1C4813002BA819 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D9994E1F1C4813002BA819 /* Event.swift */; };
+		31D999511F1C4FA5002BA819 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D999501F1C4FA5002BA819 /* Events.swift */; };
+		31D999531F1C52D6002BA819 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D999521F1C52D6002BA819 /* Response.swift */; };
+		31D999551F1C5433002BA819 /* RawValueDecodableSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D999541F1C5433002BA819 /* RawValueDecodableSerializer.swift */; };
+		31DDC2881F1C312F003E9D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC2871F1C312F003E9D83 /* AppDelegate.swift */; };
+		31DDC28A1F1C312F003E9D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC2891F1C312F003E9D83 /* ViewController.swift */; };
+		31DDC28D1F1C312F003E9D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DDC28B1F1C312F003E9D83 /* Main.storyboard */; };
+		31DDC28F1F1C312F003E9D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DDC28E1F1C312F003E9D83 /* Assets.xcassets */; };
+		31DDC2921F1C312F003E9D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DDC2901F1C312F003E9D83 /* LaunchScreen.storyboard */; };
+		31DDC29D1F1C312F003E9D83 /* FlyInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC29C1F1C312F003E9D83 /* FlyInTests.swift */; };
+		31DDC2A81F1C312F003E9D83 /* FlyInUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC2A71F1C312F003E9D83 /* FlyInUITests.swift */; };
+		31DDC2C31F1C3307003E9D83 /* FlyInLogic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DDC2BA1F1C3307003E9D83 /* FlyInLogic.framework */; };
+		31DDC2CA1F1C3307003E9D83 /* FlyInLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC2C91F1C3307003E9D83 /* FlyInLogicTests.swift */; };
+		31DDC2CC1F1C3307003E9D83 /* FlyInLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 31DDC2BC1F1C3307003E9D83 /* FlyInLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31DDC2CF1F1C3307003E9D83 /* FlyInLogic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DDC2BA1F1C3307003E9D83 /* FlyInLogic.framework */; };
+		31DDC2D01F1C3307003E9D83 /* FlyInLogic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31DDC2BA1F1C3307003E9D83 /* FlyInLogic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31DDC2E61F1C331E003E9D83 /* FlyInNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DDC2DD1F1C331E003E9D83 /* FlyInNetworking.framework */; };
+		31DDC2ED1F1C331F003E9D83 /* RawValueDecodableSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC2EC1F1C331F003E9D83 /* RawValueDecodableSerializerTests.swift */; };
+		31DDC2EF1F1C331F003E9D83 /* FlyInNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 31DDC2DF1F1C331E003E9D83 /* FlyInNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31DDC2FA1F1C332E003E9D83 /* FlyInNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DDC2DD1F1C331E003E9D83 /* FlyInNetworking.framework */; };
+		31DDC2FC1F1C3382003E9D83 /* EventsLogicCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC2FB1F1C3382003E9D83 /* EventsLogicCenter.swift */; };
+		31DDC2FE1F1C33A9003E9D83 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC2FD1F1C33A9003E9D83 /* NetworkManager.swift */; };
+		3CC5719FA26C0ECF27198D14 /* Pods_FlyInNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C066A6234D68740FBC165D /* Pods_FlyInNetworking.framework */; };
+		4DB592AD5457D1419668883E /* Pods_FlyIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7260A3902CAC58CBF539D20 /* Pods_FlyIn.framework */; };
+		858E51C26CE7AEA8AF0F3A72 /* Pods_FlyInTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3062315C881C249955E4BF8B /* Pods_FlyInTests.framework */; };
+		C41656DED3E27FEBE7CDB3AD /* Pods_FlyInLogic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BBDFCBBF2C472981EFF4CF /* Pods_FlyInLogic.framework */; };
+		EAE0414CBBE0C76BF33EEE52 /* Pods_FlyInUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7210EAF3F67D9B3540F0AFD /* Pods_FlyInUITests.framework */; };
+		F39BF629C33679735AA95816 /* Pods_FlyInLogicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBEBF6A179D035B30703DA0 /* Pods_FlyInLogicTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31DDC2991F1C312F003E9D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31DDC27C1F1C312E003E9D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31DDC2831F1C312F003E9D83;
+			remoteInfo = FlyIn;
+		};
+		31DDC2A41F1C312F003E9D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31DDC27C1F1C312E003E9D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31DDC2831F1C312F003E9D83;
+			remoteInfo = FlyIn;
+		};
+		31DDC2C41F1C3307003E9D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31DDC27C1F1C312E003E9D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31DDC2B91F1C3307003E9D83;
+			remoteInfo = FlyInLogic;
+		};
+		31DDC2C61F1C3307003E9D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31DDC27C1F1C312E003E9D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31DDC2831F1C312F003E9D83;
+			remoteInfo = FlyIn;
+		};
+		31DDC2CD1F1C3307003E9D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31DDC27C1F1C312E003E9D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31DDC2B91F1C3307003E9D83;
+			remoteInfo = FlyInLogic;
+		};
+		31DDC2E71F1C331F003E9D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31DDC27C1F1C312E003E9D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31DDC2DC1F1C331E003E9D83;
+			remoteInfo = FlyInNetworking;
+		};
+		31DDC2E91F1C331F003E9D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31DDC27C1F1C312E003E9D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31DDC2831F1C312F003E9D83;
+			remoteInfo = FlyIn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		31DDC2D41F1C3307003E9D83 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				31DDC2D01F1C3307003E9D83 /* FlyInLogic.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		153E71DBAC85AA70ED93E3BD /* Pods-FlyIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyIn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyIn/Pods-FlyIn.debug.xcconfig"; sourceTree = "<group>"; };
+		1EB30DC93BC4A72330FB686C /* Pods-FlyInNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInNetworking/Pods-FlyInNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		2DC928AA93D6A9B01FB42544 /* Pods-FlyInUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInUITests/Pods-FlyInUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3062315C881C249955E4BF8B /* Pods_FlyInTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlyInTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		319A9E7D1F20519700EE28CF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		319A9E7F1F20565D00EE28CF /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		31D9994A1F1C4027002BA819 /* RawResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawResponses.swift; sourceTree = "<group>"; };
+		31D9994C1F1C43A1002BA819 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		31D9994E1F1C4813002BA819 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		31D999501F1C4FA5002BA819 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		31D999521F1C52D6002BA819 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		31D999541F1C5433002BA819 /* RawValueDecodableSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawValueDecodableSerializer.swift; sourceTree = "<group>"; };
+		31DDC2841F1C312F003E9D83 /* FlyIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DDC2871F1C312F003E9D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31DDC2891F1C312F003E9D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31DDC28C1F1C312F003E9D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31DDC28E1F1C312F003E9D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31DDC2911F1C312F003E9D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31DDC2931F1C312F003E9D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DDC2981F1C312F003E9D83 /* FlyInTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyInTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DDC29C1F1C312F003E9D83 /* FlyInTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyInTests.swift; sourceTree = "<group>"; };
+		31DDC29E1F1C312F003E9D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DDC2A31F1C312F003E9D83 /* FlyInUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyInUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DDC2A71F1C312F003E9D83 /* FlyInUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyInUITests.swift; sourceTree = "<group>"; };
+		31DDC2A91F1C312F003E9D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DDC2BA1F1C3307003E9D83 /* FlyInLogic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlyInLogic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DDC2BC1F1C3307003E9D83 /* FlyInLogic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyInLogic.h; sourceTree = "<group>"; };
+		31DDC2BD1F1C3307003E9D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DDC2C21F1C3307003E9D83 /* FlyInLogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyInLogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DDC2C91F1C3307003E9D83 /* FlyInLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyInLogicTests.swift; sourceTree = "<group>"; };
+		31DDC2CB1F1C3307003E9D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DDC2DD1F1C331E003E9D83 /* FlyInNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlyInNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DDC2DF1F1C331E003E9D83 /* FlyInNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyInNetworking.h; sourceTree = "<group>"; };
+		31DDC2E01F1C331E003E9D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DDC2E51F1C331E003E9D83 /* FlyInNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyInNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DDC2EC1F1C331F003E9D83 /* RawValueDecodableSerializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawValueDecodableSerializerTests.swift; sourceTree = "<group>"; };
+		31DDC2EE1F1C331F003E9D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DDC2FB1F1C3382003E9D83 /* EventsLogicCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsLogicCenter.swift; sourceTree = "<group>"; };
+		31DDC2FD1F1C33A9003E9D83 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5FF48B7AE77F4B76B61B07E4 /* Pods-FlyInNetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInNetworkingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInNetworkingTests/Pods-FlyInNetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6180747EB9CEC9AA8C3C33BB /* Pods-FlyInTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInTests/Pods-FlyInTests.debug.xcconfig"; sourceTree = "<group>"; };
+		63B6126D8DA9B358745E3128 /* Pods-FlyInLogicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInLogicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInLogicTests/Pods-FlyInLogicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		70BBDFCBBF2C472981EFF4CF /* Pods_FlyInLogic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlyInLogic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73B74B0CA3B7C776E01832B1 /* Pods-FlyInNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInNetworking/Pods-FlyInNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		85C066A6234D68740FBC165D /* Pods_FlyInNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlyInNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7260A3902CAC58CBF539D20 /* Pods_FlyIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlyIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51AFFDA8D9747B6208CC44D /* Pods-FlyInNetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInNetworkingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInNetworkingTests/Pods-FlyInNetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		B651EE089E4AA380F7B270E4 /* Pods-FlyInLogicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInLogicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInLogicTests/Pods-FlyInLogicTests.release.xcconfig"; sourceTree = "<group>"; };
+		CEBACCDDDCDCF8D8D4AD9E27 /* Pods-FlyInLogic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInLogic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInLogic/Pods-FlyInLogic.debug.xcconfig"; sourceTree = "<group>"; };
+		D21C01AF5A552604F066985C /* Pods-FlyInUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInUITests/Pods-FlyInUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D286CFDA3363D6836E7492B8 /* Pods-FlyInTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInTests/Pods-FlyInTests.release.xcconfig"; sourceTree = "<group>"; };
+		D45CE18F340B04EA4E1D22D5 /* Pods-FlyInLogic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInLogic.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInLogic/Pods-FlyInLogic.release.xcconfig"; sourceTree = "<group>"; };
+		D7210EAF3F67D9B3540F0AFD /* Pods_FlyInUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlyInUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEBEBF6A179D035B30703DA0 /* Pods_FlyInLogicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlyInLogicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9086C291BB4FC1335417AA5 /* Pods-FlyIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyIn.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyIn/Pods-FlyIn.release.xcconfig"; sourceTree = "<group>"; };
+		EC06D7661479D79BF94D6807 /* Pods_FlyInNetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlyInNetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31DDC2811F1C312F003E9D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DDC2CF1F1C3307003E9D83 /* FlyInLogic.framework in Frameworks */,
+				4DB592AD5457D1419668883E /* Pods_FlyIn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2951F1C312F003E9D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				858E51C26CE7AEA8AF0F3A72 /* Pods_FlyInTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2A01F1C312F003E9D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE0414CBBE0C76BF33EEE52 /* Pods_FlyInUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2B61F1C3307003E9D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DDC2FA1F1C332E003E9D83 /* FlyInNetworking.framework in Frameworks */,
+				C41656DED3E27FEBE7CDB3AD /* Pods_FlyInLogic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2BF1F1C3307003E9D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DDC2C31F1C3307003E9D83 /* FlyInLogic.framework in Frameworks */,
+				F39BF629C33679735AA95816 /* Pods_FlyInLogicTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2D91F1C331E003E9D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC5719FA26C0ECF27198D14 /* Pods_FlyInNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2E21F1C331E003E9D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DDC2E61F1C331E003E9D83 /* FlyInNetworking.framework in Frameworks */,
+				0C7EBC1436197BD5DF94A009 /* Pods_FlyInNetworkingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		098FA9BBDDF7BF2E3F518EF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				153E71DBAC85AA70ED93E3BD /* Pods-FlyIn.debug.xcconfig */,
+				E9086C291BB4FC1335417AA5 /* Pods-FlyIn.release.xcconfig */,
+				CEBACCDDDCDCF8D8D4AD9E27 /* Pods-FlyInLogic.debug.xcconfig */,
+				D45CE18F340B04EA4E1D22D5 /* Pods-FlyInLogic.release.xcconfig */,
+				63B6126D8DA9B358745E3128 /* Pods-FlyInLogicTests.debug.xcconfig */,
+				B651EE089E4AA380F7B270E4 /* Pods-FlyInLogicTests.release.xcconfig */,
+				73B74B0CA3B7C776E01832B1 /* Pods-FlyInNetworking.debug.xcconfig */,
+				1EB30DC93BC4A72330FB686C /* Pods-FlyInNetworking.release.xcconfig */,
+				5FF48B7AE77F4B76B61B07E4 /* Pods-FlyInNetworkingTests.debug.xcconfig */,
+				B51AFFDA8D9747B6208CC44D /* Pods-FlyInNetworkingTests.release.xcconfig */,
+				6180747EB9CEC9AA8C3C33BB /* Pods-FlyInTests.debug.xcconfig */,
+				D286CFDA3363D6836E7492B8 /* Pods-FlyInTests.release.xcconfig */,
+				2DC928AA93D6A9B01FB42544 /* Pods-FlyInUITests.debug.xcconfig */,
+				D21C01AF5A552604F066985C /* Pods-FlyInUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		31ADAF6A1F21AC7300859F04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31DDC2EE1F1C331F003E9D83 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31CB1C741F21AC3000B43CF5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31DDC2DF1F1C331E003E9D83 /* FlyInNetworking.h */,
+				31DDC2E01F1C331E003E9D83 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		31D999491F1C3B2A002BA819 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				31D9994A1F1C4027002BA819 /* RawResponses.swift */,
+				31D9994C1F1C43A1002BA819 /* Location.swift */,
+				31D9994E1F1C4813002BA819 /* Event.swift */,
+				31D999501F1C4FA5002BA819 /* Events.swift */,
+				31D999521F1C52D6002BA819 /* Response.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		31DDC27B1F1C312E003E9D83 = {
+			isa = PBXGroup;
+			children = (
+				31DDC2861F1C312F003E9D83 /* FlyIn */,
+				31DDC29B1F1C312F003E9D83 /* FlyInTests */,
+				31DDC2A61F1C312F003E9D83 /* FlyInUITests */,
+				31DDC2BB1F1C3307003E9D83 /* FlyInLogic */,
+				31DDC2C81F1C3307003E9D83 /* FlyInLogicTests */,
+				31DDC2DE1F1C331E003E9D83 /* FlyInNetworking */,
+				31DDC2EB1F1C331F003E9D83 /* FlyInNetworkingTests */,
+				31DDC2851F1C312F003E9D83 /* Products */,
+				098FA9BBDDF7BF2E3F518EF9 /* Pods */,
+				59FCC8EAB89F24A62EA7A837 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		31DDC2851F1C312F003E9D83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31DDC2841F1C312F003E9D83 /* FlyIn.app */,
+				31DDC2981F1C312F003E9D83 /* FlyInTests.xctest */,
+				31DDC2A31F1C312F003E9D83 /* FlyInUITests.xctest */,
+				31DDC2BA1F1C3307003E9D83 /* FlyInLogic.framework */,
+				31DDC2C21F1C3307003E9D83 /* FlyInLogicTests.xctest */,
+				31DDC2DD1F1C331E003E9D83 /* FlyInNetworking.framework */,
+				31DDC2E51F1C331E003E9D83 /* FlyInNetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31DDC2861F1C312F003E9D83 /* FlyIn */ = {
+			isa = PBXGroup;
+			children = (
+				31DDC2871F1C312F003E9D83 /* AppDelegate.swift */,
+				31DDC2891F1C312F003E9D83 /* ViewController.swift */,
+				31DDC28B1F1C312F003E9D83 /* Main.storyboard */,
+				31DDC28E1F1C312F003E9D83 /* Assets.xcassets */,
+				31DDC2901F1C312F003E9D83 /* LaunchScreen.storyboard */,
+				31DDC2931F1C312F003E9D83 /* Info.plist */,
+			);
+			path = FlyIn;
+			sourceTree = "<group>";
+		};
+		31DDC29B1F1C312F003E9D83 /* FlyInTests */ = {
+			isa = PBXGroup;
+			children = (
+				31DDC29C1F1C312F003E9D83 /* FlyInTests.swift */,
+				31DDC29E1F1C312F003E9D83 /* Info.plist */,
+			);
+			path = FlyInTests;
+			sourceTree = "<group>";
+		};
+		31DDC2A61F1C312F003E9D83 /* FlyInUITests */ = {
+			isa = PBXGroup;
+			children = (
+				31DDC2A71F1C312F003E9D83 /* FlyInUITests.swift */,
+				31DDC2A91F1C312F003E9D83 /* Info.plist */,
+			);
+			path = FlyInUITests;
+			sourceTree = "<group>";
+		};
+		31DDC2BB1F1C3307003E9D83 /* FlyInLogic */ = {
+			isa = PBXGroup;
+			children = (
+				31DDC2BC1F1C3307003E9D83 /* FlyInLogic.h */,
+				31DDC2BD1F1C3307003E9D83 /* Info.plist */,
+				31DDC2FB1F1C3382003E9D83 /* EventsLogicCenter.swift */,
+			);
+			path = FlyInLogic;
+			sourceTree = "<group>";
+		};
+		31DDC2C81F1C3307003E9D83 /* FlyInLogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				31DDC2C91F1C3307003E9D83 /* FlyInLogicTests.swift */,
+				31DDC2CB1F1C3307003E9D83 /* Info.plist */,
+			);
+			path = FlyInLogicTests;
+			sourceTree = "<group>";
+		};
+		31DDC2DE1F1C331E003E9D83 /* FlyInNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				31DDC2FD1F1C33A9003E9D83 /* NetworkManager.swift */,
+				31D999541F1C5433002BA819 /* RawValueDecodableSerializer.swift */,
+				319A9E7D1F20519700EE28CF /* Router.swift */,
+				31D999491F1C3B2A002BA819 /* Responses */,
+				31CB1C741F21AC3000B43CF5 /* Support Files */,
+			);
+			path = FlyInNetworking;
+			sourceTree = "<group>";
+		};
+		31DDC2EB1F1C331F003E9D83 /* FlyInNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				319A9E7F1F20565D00EE28CF /* NetworkManagerTests.swift */,
+				31DDC2EC1F1C331F003E9D83 /* RawValueDecodableSerializerTests.swift */,
+				31ADAF6A1F21AC7300859F04 /* Supporting Files */,
+			);
+			path = FlyInNetworkingTests;
+			sourceTree = "<group>";
+		};
+		59FCC8EAB89F24A62EA7A837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7260A3902CAC58CBF539D20 /* Pods_FlyIn.framework */,
+				70BBDFCBBF2C472981EFF4CF /* Pods_FlyInLogic.framework */,
+				DEBEBF6A179D035B30703DA0 /* Pods_FlyInLogicTests.framework */,
+				85C066A6234D68740FBC165D /* Pods_FlyInNetworking.framework */,
+				EC06D7661479D79BF94D6807 /* Pods_FlyInNetworkingTests.framework */,
+				3062315C881C249955E4BF8B /* Pods_FlyInTests.framework */,
+				D7210EAF3F67D9B3540F0AFD /* Pods_FlyInUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		31DDC2B71F1C3307003E9D83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DDC2CC1F1C3307003E9D83 /* FlyInLogic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2DA1F1C331E003E9D83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DDC2EF1F1C331F003E9D83 /* FlyInNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31DDC2831F1C312F003E9D83 /* FlyIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31DDC2AC1F1C312F003E9D83 /* Build configuration list for PBXNativeTarget "FlyIn" */;
+			buildPhases = (
+				72A171299241629677CDD314 /* [CP] Check Pods Manifest.lock */,
+				31DDC2801F1C312F003E9D83 /* Sources */,
+				31DDC2811F1C312F003E9D83 /* Frameworks */,
+				31DDC2821F1C312F003E9D83 /* Resources */,
+				31DDC2D41F1C3307003E9D83 /* Embed Frameworks */,
+				5ED4031B93B6707D8504726B /* [CP] Embed Pods Frameworks */,
+				4A7BB47E96EDB1CA9AF25F96 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31DDC2CE1F1C3307003E9D83 /* PBXTargetDependency */,
+			);
+			name = FlyIn;
+			productName = FlyIn;
+			productReference = 31DDC2841F1C312F003E9D83 /* FlyIn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31DDC2971F1C312F003E9D83 /* FlyInTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31DDC2AF1F1C312F003E9D83 /* Build configuration list for PBXNativeTarget "FlyInTests" */;
+			buildPhases = (
+				885F65CC408484A433B1A477 /* [CP] Check Pods Manifest.lock */,
+				31DDC2941F1C312F003E9D83 /* Sources */,
+				31DDC2951F1C312F003E9D83 /* Frameworks */,
+				31DDC2961F1C312F003E9D83 /* Resources */,
+				F6A619B4B9157C605D95F891 /* [CP] Embed Pods Frameworks */,
+				2AEE5F26CDCC011BA4C38A9A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31DDC29A1F1C312F003E9D83 /* PBXTargetDependency */,
+			);
+			name = FlyInTests;
+			productName = FlyInTests;
+			productReference = 31DDC2981F1C312F003E9D83 /* FlyInTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		31DDC2A21F1C312F003E9D83 /* FlyInUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31DDC2B21F1C312F003E9D83 /* Build configuration list for PBXNativeTarget "FlyInUITests" */;
+			buildPhases = (
+				98407F9A7E08D1A5D37D64F4 /* [CP] Check Pods Manifest.lock */,
+				31DDC29F1F1C312F003E9D83 /* Sources */,
+				31DDC2A01F1C312F003E9D83 /* Frameworks */,
+				31DDC2A11F1C312F003E9D83 /* Resources */,
+				545B01794E5459FA7BBB871E /* [CP] Embed Pods Frameworks */,
+				8B52B0683D0BB3DA6034A41C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31DDC2A51F1C312F003E9D83 /* PBXTargetDependency */,
+			);
+			name = FlyInUITests;
+			productName = FlyInUITests;
+			productReference = 31DDC2A31F1C312F003E9D83 /* FlyInUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		31DDC2B91F1C3307003E9D83 /* FlyInLogic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31DDC2D11F1C3307003E9D83 /* Build configuration list for PBXNativeTarget "FlyInLogic" */;
+			buildPhases = (
+				46565A8785B0B1C7B724C979 /* [CP] Check Pods Manifest.lock */,
+				31DDC2B51F1C3307003E9D83 /* Sources */,
+				31DDC2B61F1C3307003E9D83 /* Frameworks */,
+				31DDC2B71F1C3307003E9D83 /* Headers */,
+				31DDC2B81F1C3307003E9D83 /* Resources */,
+				9B6C51A2B46FC3E27EF95EEC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyInLogic;
+			productName = FlyInLogic;
+			productReference = 31DDC2BA1F1C3307003E9D83 /* FlyInLogic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		31DDC2C11F1C3307003E9D83 /* FlyInLogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31DDC2D51F1C3307003E9D83 /* Build configuration list for PBXNativeTarget "FlyInLogicTests" */;
+			buildPhases = (
+				8A8F3F15B2DE4DD8F4784AC0 /* [CP] Check Pods Manifest.lock */,
+				31DDC2BE1F1C3307003E9D83 /* Sources */,
+				31DDC2BF1F1C3307003E9D83 /* Frameworks */,
+				31DDC2C01F1C3307003E9D83 /* Resources */,
+				213EEC914573C8C730F57747 /* [CP] Embed Pods Frameworks */,
+				FE0611350F7457AFE99F4444 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31DDC2C51F1C3307003E9D83 /* PBXTargetDependency */,
+				31DDC2C71F1C3307003E9D83 /* PBXTargetDependency */,
+			);
+			name = FlyInLogicTests;
+			productName = FlyInLogicTests;
+			productReference = 31DDC2C21F1C3307003E9D83 /* FlyInLogicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		31DDC2DC1F1C331E003E9D83 /* FlyInNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31DDC2F41F1C331F003E9D83 /* Build configuration list for PBXNativeTarget "FlyInNetworking" */;
+			buildPhases = (
+				AB211588323B29179596F1D0 /* [CP] Check Pods Manifest.lock */,
+				31DDC2D81F1C331E003E9D83 /* Sources */,
+				31DDC2D91F1C331E003E9D83 /* Frameworks */,
+				31DDC2DA1F1C331E003E9D83 /* Headers */,
+				31DDC2DB1F1C331E003E9D83 /* Resources */,
+				EB6046EDF56F418DE9ECE8AD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyInNetworking;
+			productName = FlyInNetworking;
+			productReference = 31DDC2DD1F1C331E003E9D83 /* FlyInNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		31DDC2E41F1C331E003E9D83 /* FlyInNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31DDC2F71F1C331F003E9D83 /* Build configuration list for PBXNativeTarget "FlyInNetworkingTests" */;
+			buildPhases = (
+				16AD01AF80A2E74F25426431 /* [CP] Check Pods Manifest.lock */,
+				31DDC2E11F1C331E003E9D83 /* Sources */,
+				31DDC2E21F1C331E003E9D83 /* Frameworks */,
+				31DDC2E31F1C331E003E9D83 /* Resources */,
+				4CB8A610DE6C6BBE623D8E95 /* [CP] Embed Pods Frameworks */,
+				C91BD38670B072771089B51A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31DDC2E81F1C331F003E9D83 /* PBXTargetDependency */,
+				31DDC2EA1F1C331F003E9D83 /* PBXTargetDependency */,
+			);
+			name = FlyInNetworkingTests;
+			productName = FlyInNetworkingTests;
+			productReference = 31DDC2E51F1C331E003E9D83 /* FlyInNetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31DDC27C1F1C312E003E9D83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Jon Shier";
+				TargetAttributes = {
+					31DDC2831F1C312F003E9D83 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					31DDC2971F1C312F003E9D83 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 31DDC2831F1C312F003E9D83;
+					};
+					31DDC2A21F1C312F003E9D83 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 31DDC2831F1C312F003E9D83;
+					};
+					31DDC2B91F1C3307003E9D83 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+					};
+					31DDC2C11F1C3307003E9D83 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					31DDC2DC1F1C331E003E9D83 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+					};
+					31DDC2E41F1C331E003E9D83 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 31DDC27F1F1C312F003E9D83 /* Build configuration list for PBXProject "FlyIn" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31DDC27B1F1C312E003E9D83;
+			productRefGroup = 31DDC2851F1C312F003E9D83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31DDC2831F1C312F003E9D83 /* FlyIn */,
+				31DDC2971F1C312F003E9D83 /* FlyInTests */,
+				31DDC2A21F1C312F003E9D83 /* FlyInUITests */,
+				31DDC2B91F1C3307003E9D83 /* FlyInLogic */,
+				31DDC2C11F1C3307003E9D83 /* FlyInLogicTests */,
+				31DDC2DC1F1C331E003E9D83 /* FlyInNetworking */,
+				31DDC2E41F1C331E003E9D83 /* FlyInNetworkingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31DDC2821F1C312F003E9D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DDC2921F1C312F003E9D83 /* LaunchScreen.storyboard in Resources */,
+				31DDC28F1F1C312F003E9D83 /* Assets.xcassets in Resources */,
+				31DDC28D1F1C312F003E9D83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2961F1C312F003E9D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2A11F1C312F003E9D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2B81F1C3307003E9D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2C01F1C3307003E9D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2DB1F1C331E003E9D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2E31F1C331E003E9D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16AD01AF80A2E74F25426431 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlyInNetworkingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		213EEC914573C8C730F57747 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyInLogicTests/Pods-FlyInLogicTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AEE5F26CDCC011BA4C38A9A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyInTests/Pods-FlyInTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46565A8785B0B1C7B724C979 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlyInLogic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A7BB47E96EDB1CA9AF25F96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyIn/Pods-FlyIn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CB8A610DE6C6BBE623D8E95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlyInNetworkingTests/Pods-FlyInNetworkingTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyInNetworkingTests/Pods-FlyInNetworkingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		545B01794E5459FA7BBB871E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyInUITests/Pods-FlyInUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ED4031B93B6707D8504726B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyIn/Pods-FlyIn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72A171299241629677CDD314 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlyIn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		885F65CC408484A433B1A477 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlyInTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A8F3F15B2DE4DD8F4784AC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlyInLogicTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B52B0683D0BB3DA6034A41C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyInUITests/Pods-FlyInUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98407F9A7E08D1A5D37D64F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlyInUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B6C51A2B46FC3E27EF95EEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyInLogic/Pods-FlyInLogic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB211588323B29179596F1D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlyInNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C91BD38670B072771089B51A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyInNetworkingTests/Pods-FlyInNetworkingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB6046EDF56F418DE9ECE8AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyInNetworking/Pods-FlyInNetworking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A619B4B9157C605D95F891 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyInTests/Pods-FlyInTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE0611350F7457AFE99F4444 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyInLogicTests/Pods-FlyInLogicTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31DDC2801F1C312F003E9D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DDC28A1F1C312F003E9D83 /* ViewController.swift in Sources */,
+				31DDC2881F1C312F003E9D83 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2941F1C312F003E9D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DDC29D1F1C312F003E9D83 /* FlyInTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC29F1F1C312F003E9D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DDC2A81F1C312F003E9D83 /* FlyInUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2B51F1C3307003E9D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DDC2FC1F1C3382003E9D83 /* EventsLogicCenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2BE1F1C3307003E9D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DDC2CA1F1C3307003E9D83 /* FlyInLogicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2D81F1C331E003E9D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319A9E7E1F20519700EE28CF /* Router.swift in Sources */,
+				31D9994F1F1C4813002BA819 /* Event.swift in Sources */,
+				31D999551F1C5433002BA819 /* RawValueDecodableSerializer.swift in Sources */,
+				31DDC2FE1F1C33A9003E9D83 /* NetworkManager.swift in Sources */,
+				31D9994D1F1C43A1002BA819 /* Location.swift in Sources */,
+				31D9994B1F1C4027002BA819 /* RawResponses.swift in Sources */,
+				31D999531F1C52D6002BA819 /* Response.swift in Sources */,
+				31D999511F1C4FA5002BA819 /* Events.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DDC2E11F1C331E003E9D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319A9E801F20565D00EE28CF /* NetworkManagerTests.swift in Sources */,
+				31DDC2ED1F1C331F003E9D83 /* RawValueDecodableSerializerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31DDC29A1F1C312F003E9D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31DDC2831F1C312F003E9D83 /* FlyIn */;
+			targetProxy = 31DDC2991F1C312F003E9D83 /* PBXContainerItemProxy */;
+		};
+		31DDC2A51F1C312F003E9D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31DDC2831F1C312F003E9D83 /* FlyIn */;
+			targetProxy = 31DDC2A41F1C312F003E9D83 /* PBXContainerItemProxy */;
+		};
+		31DDC2C51F1C3307003E9D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31DDC2B91F1C3307003E9D83 /* FlyInLogic */;
+			targetProxy = 31DDC2C41F1C3307003E9D83 /* PBXContainerItemProxy */;
+		};
+		31DDC2C71F1C3307003E9D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31DDC2831F1C312F003E9D83 /* FlyIn */;
+			targetProxy = 31DDC2C61F1C3307003E9D83 /* PBXContainerItemProxy */;
+		};
+		31DDC2CE1F1C3307003E9D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31DDC2B91F1C3307003E9D83 /* FlyInLogic */;
+			targetProxy = 31DDC2CD1F1C3307003E9D83 /* PBXContainerItemProxy */;
+		};
+		31DDC2E81F1C331F003E9D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31DDC2DC1F1C331E003E9D83 /* FlyInNetworking */;
+			targetProxy = 31DDC2E71F1C331F003E9D83 /* PBXContainerItemProxy */;
+		};
+		31DDC2EA1F1C331F003E9D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31DDC2831F1C312F003E9D83 /* FlyIn */;
+			targetProxy = 31DDC2E91F1C331F003E9D83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31DDC28B1F1C312F003E9D83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31DDC28C1F1C312F003E9D83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31DDC2901F1C312F003E9D83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31DDC2911F1C312F003E9D83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31DDC2AA1F1C312F003E9D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		31DDC2AB1F1C312F003E9D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31DDC2AD1F1C312F003E9D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 153E71DBAC85AA70ED93E3BD /* Pods-FlyIn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				INFOPLIST_FILE = FlyIn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31DDC2AE1F1C312F003E9D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9086C291BB4FC1335417AA5 /* Pods-FlyIn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				INFOPLIST_FILE = FlyIn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		31DDC2B01F1C312F003E9D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6180747EB9CEC9AA8C3C33BB /* Pods-FlyInTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				INFOPLIST_FILE = FlyInTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyInTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlyIn.app/FlyIn";
+			};
+			name = Debug;
+		};
+		31DDC2B11F1C312F003E9D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D286CFDA3363D6836E7492B8 /* Pods-FlyInTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				INFOPLIST_FILE = FlyInTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyInTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlyIn.app/FlyIn";
+			};
+			name = Release;
+		};
+		31DDC2B31F1C312F003E9D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DC928AA93D6A9B01FB42544 /* Pods-FlyInUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				INFOPLIST_FILE = FlyInUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyInUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlyIn;
+			};
+			name = Debug;
+		};
+		31DDC2B41F1C312F003E9D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21C01AF5A552604F066985C /* Pods-FlyInUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				INFOPLIST_FILE = FlyInUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyInUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlyIn;
+			};
+			name = Release;
+		};
+		31DDC2D21F1C3307003E9D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEBACCDDDCDCF8D8D4AD9E27 /* Pods-FlyInLogic.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FlyInLogic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyInLogic;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		31DDC2D31F1C3307003E9D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D45CE18F340B04EA4E1D22D5 /* Pods-FlyInLogic.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FlyInLogic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyInLogic;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		31DDC2D61F1C3307003E9D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6126D8DA9B358745E3128 /* Pods-FlyInLogicTests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				INFOPLIST_FILE = FlyInLogicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyInLogicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31DDC2D71F1C3307003E9D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B651EE089E4AA380F7B270E4 /* Pods-FlyInLogicTests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				INFOPLIST_FILE = FlyInLogicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyInLogicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		31DDC2F51F1C331F003E9D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73B74B0CA3B7C776E01832B1 /* Pods-FlyInNetworking.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/FlyInNetworking/Support Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyInNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		31DDC2F61F1C331F003E9D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB30DC93BC4A72330FB686C /* Pods-FlyInNetworking.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/FlyInNetworking/Support Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyInNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		31DDC2F81F1C331F003E9D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FF48B7AE77F4B76B61B07E4 /* Pods-FlyInNetworkingTests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				INFOPLIST_FILE = "FlyInNetworkingTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyInNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31DDC2F91F1C331F003E9D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B51AFFDA8D9747B6208CC44D /* Pods-FlyInNetworkingTests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 555RUP2XT7;
+				INFOPLIST_FILE = "FlyInNetworkingTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonshier.FlyInNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31DDC27F1F1C312F003E9D83 /* Build configuration list for PBXProject "FlyIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31DDC2AA1F1C312F003E9D83 /* Debug */,
+				31DDC2AB1F1C312F003E9D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31DDC2AC1F1C312F003E9D83 /* Build configuration list for PBXNativeTarget "FlyIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31DDC2AD1F1C312F003E9D83 /* Debug */,
+				31DDC2AE1F1C312F003E9D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31DDC2AF1F1C312F003E9D83 /* Build configuration list for PBXNativeTarget "FlyInTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31DDC2B01F1C312F003E9D83 /* Debug */,
+				31DDC2B11F1C312F003E9D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31DDC2B21F1C312F003E9D83 /* Build configuration list for PBXNativeTarget "FlyInUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31DDC2B31F1C312F003E9D83 /* Debug */,
+				31DDC2B41F1C312F003E9D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31DDC2D11F1C3307003E9D83 /* Build configuration list for PBXNativeTarget "FlyInLogic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31DDC2D21F1C3307003E9D83 /* Debug */,
+				31DDC2D31F1C3307003E9D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31DDC2D51F1C3307003E9D83 /* Build configuration list for PBXNativeTarget "FlyInLogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31DDC2D61F1C3307003E9D83 /* Debug */,
+				31DDC2D71F1C3307003E9D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31DDC2F41F1C331F003E9D83 /* Build configuration list for PBXNativeTarget "FlyInNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31DDC2F51F1C331F003E9D83 /* Debug */,
+				31DDC2F61F1C331F003E9D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31DDC2F71F1C331F003E9D83 /* Build configuration list for PBXNativeTarget "FlyInNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31DDC2F81F1C331F003E9D83 /* Debug */,
+				31DDC2F91F1C331F003E9D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31DDC27C1F1C312E003E9D83 /* Project object */;
+}
