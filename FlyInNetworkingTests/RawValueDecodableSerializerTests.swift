@@ -105,7 +105,10 @@ class RawValueDecodableSerializerTests: XCTestCase {
 
         // Then
         XCTAssertTrue(result.isSuccess)
-        XCTAssertEqual(result.value?.events.events.count, 3)
+        XCTAssertEqual(result.value?.events.all.count, 3)
+        XCTAssertEqual(result.value?.events.tuesday.count, 1)
+        XCTAssertEqual(result.value?.events.any.count, 1)
+        XCTAssertEqual(result.value?.events.wednesday.count, 1)
     }
     
 }

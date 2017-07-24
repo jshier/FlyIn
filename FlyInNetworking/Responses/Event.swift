@@ -45,3 +45,23 @@ extension EventInterval {
     }
     
 }
+
+extension Calendar {
+    
+    static let gregorian = Calendar(identifier: .gregorian)
+    
+}
+
+extension Date {
+    
+    var dayOfWeek: DayOfWeek {
+        return DayOfWeek(rawValue: Calendar.gregorian.component(.weekday, from: self))!
+    }
+    
+}
+
+enum DayOfWeek: Int {
+    
+    case monday = 1, tuesday, wednesday, thursday, friday, saturday, sunday
+    
+}

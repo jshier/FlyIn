@@ -10,9 +10,7 @@ import Foundation
 import FlyInNetworking
 
 public struct EventsLogicCenter {
-    
-    let manager = NetworkManager()
-    
+        
     public init() {
         
     }

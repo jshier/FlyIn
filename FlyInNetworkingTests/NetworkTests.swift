@@ -1,5 +1,5 @@
 //
-//  NetworkManagerTests.swift
+//  NetworkTests.swift
 //  FlyInNetworkingTests
 //
 //  Created by Jon Shier on 7/19/17.
@@ -10,16 +10,16 @@ import Alamofire
 import XCTest
 @testable import FlyInNetworking
 
-class NetworkManagerTests: XCTestCase {
+class NetworkTests: XCTestCase {
     
     func testRequestingEvents() {
         // Given
-        var networkResult: Result<Response>?
+        var networkResult: Result<Events>?
         weak var networkExpectation = expectation(description: "Network request should finish.")
         
         // When
-        Alamofire.request(Router.events).responseValue { (response: DataResponse<Response>) in
-            networkResult = response.result
+        Network.shared.fetchEvents { events in
+            networkResult = events
             networkExpectation?.fulfill()
         }
         
