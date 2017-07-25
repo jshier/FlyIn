@@ -11,14 +11,14 @@ import Foundation
 public struct Events: Codable {
     
     let all: [Event]
-    let any: [Event]
-    let monday: [Event]
-    let tuesday: [Event]
-    let wednesday: [Event]
-    let thursday: [Event]
-    let friday: [Event]
-    let saturday: [Event]
-    let sunday: [Event]
+    public let any: [Event]
+    public let monday: [Event]
+    public let tuesday: [Event]
+    public let wednesday: [Event]
+    public let thursday: [Event]
+    public let friday: [Event]
+    public let saturday: [Event]
+    public let sunday: [Event]
     
 }
 

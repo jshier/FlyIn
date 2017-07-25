@@ -1,0 +1,13 @@
+default_platform :ios
+
+import_from_git(url: 'https://github.com/detroit-labs/fastlane-template')
+
+desc "Generates the Storyboard extensions"
+lane :generateStoryboardExtensions do
+  sh "../scripts/blackboard ../FlyIn/ ../FlyIn/Generated"
+end
+
+desc "Generates all generated assets"
+lane :generateAll do
+  generateStoryboardExtensions
+end

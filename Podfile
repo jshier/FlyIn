@@ -16,6 +16,8 @@ end
 target 'FlyInLogic' do
   use_frameworks!
 
+  pod 'Alamofire'
+
   target 'FlyInLogicTests' do
     inherit! :search_paths
   end

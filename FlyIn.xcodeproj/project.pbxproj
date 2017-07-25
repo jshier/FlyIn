@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0C7EBC1436197BD5DF94A009 /* Pods_FlyInNetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06D7661479D79BF94D6807 /* Pods_FlyInNetworkingTests.framework */; };
+		311A3FC41F26E3940019B8E1 /* EventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311A3FC31F26E3940019B8E1 /* EventsCollectionViewCell.swift */; };
+		311A3FC61F26E3B00019B8E1 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311A3FC51F26E3B00019B8E1 /* EventTableViewCell.swift */; };
+		311A3FC81F26E3C30019B8E1 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311A3FC71F26E3C30019B8E1 /* EventDetailsViewController.swift */; };
 		319A9E7E1F20519700EE28CF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319A9E7D1F20519700EE28CF /* Router.swift */; };
 		319A9E801F20565D00EE28CF /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319A9E7F1F20565D00EE28CF /* NetworkTests.swift */; };
 		31D9994B1F1C4027002BA819 /* RawResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D9994A1F1C4027002BA819 /* RawResponses.swift */; };
@@ -17,7 +20,7 @@
 		31D999531F1C52D6002BA819 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D999521F1C52D6002BA819 /* Response.swift */; };
 		31D999551F1C5433002BA819 /* RawValueDecodableSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D999541F1C5433002BA819 /* RawValueDecodableSerializer.swift */; };
 		31DDC2881F1C312F003E9D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC2871F1C312F003E9D83 /* AppDelegate.swift */; };
-		31DDC28A1F1C312F003E9D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC2891F1C312F003E9D83 /* ViewController.swift */; };
+		31DDC28A1F1C312F003E9D83 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC2891F1C312F003E9D83 /* EventsViewController.swift */; };
 		31DDC28D1F1C312F003E9D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DDC28B1F1C312F003E9D83 /* Main.storyboard */; };
 		31DDC28F1F1C312F003E9D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DDC28E1F1C312F003E9D83 /* Assets.xcassets */; };
 		31DDC2921F1C312F003E9D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DDC2901F1C312F003E9D83 /* LaunchScreen.storyboard */; };
@@ -34,6 +37,7 @@
 		31DDC2FA1F1C332E003E9D83 /* FlyInNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DDC2DD1F1C331E003E9D83 /* FlyInNetworking.framework */; };
 		31DDC2FC1F1C3382003E9D83 /* EventsLogicCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC2FB1F1C3382003E9D83 /* EventsLogicCenter.swift */; };
 		31DDC2FE1F1C33A9003E9D83 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC2FD1F1C33A9003E9D83 /* Network.swift */; };
+		31FDE51B1F26EE0E002158E9 /* MainStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FDE51A1F26ED49002158E9 /* MainStoryboardExtensions.swift */; };
 		3CC5719FA26C0ECF27198D14 /* Pods_FlyInNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C066A6234D68740FBC165D /* Pods_FlyInNetworking.framework */; };
 		4DB592AD5457D1419668883E /* Pods_FlyIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7260A3902CAC58CBF539D20 /* Pods_FlyIn.framework */; };
 		858E51C26CE7AEA8AF0F3A72 /* Pods_FlyInTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3062315C881C249955E4BF8B /* Pods_FlyInTests.framework */; };
@@ -113,6 +117,9 @@
 		1EB30DC93BC4A72330FB686C /* Pods-FlyInNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInNetworking/Pods-FlyInNetworking.release.xcconfig"; sourceTree = "<group>"; };
 		2DC928AA93D6A9B01FB42544 /* Pods-FlyInUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInUITests/Pods-FlyInUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3062315C881C249955E4BF8B /* Pods_FlyInTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlyInTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		311A3FC31F26E3940019B8E1 /* EventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCollectionViewCell.swift; sourceTree = "<group>"; };
+		311A3FC51F26E3B00019B8E1 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		311A3FC71F26E3C30019B8E1 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		319A9E7D1F20519700EE28CF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		319A9E7F1F20565D00EE28CF /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		31D9994A1F1C4027002BA819 /* RawResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawResponses.swift; sourceTree = "<group>"; };
@@ -123,7 +130,7 @@
 		31D999541F1C5433002BA819 /* RawValueDecodableSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawValueDecodableSerializer.swift; sourceTree = "<group>"; };
 		31DDC2841F1C312F003E9D83 /* FlyIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DDC2871F1C312F003E9D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		31DDC2891F1C312F003E9D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31DDC2891F1C312F003E9D83 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		31DDC28C1F1C312F003E9D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31DDC28E1F1C312F003E9D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31DDC2911F1C312F003E9D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,6 +155,7 @@
 		31DDC2EE1F1C331F003E9D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31DDC2FB1F1C3382003E9D83 /* EventsLogicCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsLogicCenter.swift; sourceTree = "<group>"; };
 		31DDC2FD1F1C33A9003E9D83 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		31FDE51A1F26ED49002158E9 /* MainStoryboardExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryboardExtensions.swift; sourceTree = "<group>"; };
 		5FF48B7AE77F4B76B61B07E4 /* Pods-FlyInNetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInNetworkingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInNetworkingTests/Pods-FlyInNetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6180747EB9CEC9AA8C3C33BB /* Pods-FlyInTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInTests/Pods-FlyInTests.debug.xcconfig"; sourceTree = "<group>"; };
 		63B6126D8DA9B358745E3128 /* Pods-FlyInLogicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyInLogicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyInLogicTests/Pods-FlyInLogicTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -314,12 +322,16 @@
 		31DDC2861F1C312F003E9D83 /* FlyIn */ = {
 			isa = PBXGroup;
 			children = (
+				31FDE5191F26ED49002158E9 /* Generated */,
 				31DDC2871F1C312F003E9D83 /* AppDelegate.swift */,
-				31DDC2891F1C312F003E9D83 /* ViewController.swift */,
+				31DDC2891F1C312F003E9D83 /* EventsViewController.swift */,
 				31DDC28B1F1C312F003E9D83 /* Main.storyboard */,
 				31DDC28E1F1C312F003E9D83 /* Assets.xcassets */,
 				31DDC2901F1C312F003E9D83 /* LaunchScreen.storyboard */,
 				31DDC2931F1C312F003E9D83 /* Info.plist */,
+				311A3FC31F26E3940019B8E1 /* EventsCollectionViewCell.swift */,
+				311A3FC51F26E3B00019B8E1 /* EventTableViewCell.swift */,
+				311A3FC71F26E3C30019B8E1 /* EventDetailsViewController.swift */,
 			);
 			path = FlyIn;
 			sourceTree = "<group>";
@@ -381,6 +393,14 @@
 				31ADAF6A1F21AC7300859F04 /* Supporting Files */,
 			);
 			path = FlyInNetworkingTests;
+			sourceTree = "<group>";
+		};
+		31FDE5191F26ED49002158E9 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				31FDE51A1F26ED49002158E9 /* MainStoryboardExtensions.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		59FCC8EAB89F24A62EA7A837 /* Frameworks */ = {
@@ -710,9 +730,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlyInLogicTests/Pods-FlyInLogicTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -806,9 +829,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlyIn/Pods-FlyIn-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1002,8 +1028,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31DDC28A1F1C312F003E9D83 /* ViewController.swift in Sources */,
+				311A3FC61F26E3B00019B8E1 /* EventTableViewCell.swift in Sources */,
+				31FDE51B1F26EE0E002158E9 /* MainStoryboardExtensions.swift in Sources */,
+				311A3FC81F26E3C30019B8E1 /* EventDetailsViewController.swift in Sources */,
+				31DDC28A1F1C312F003E9D83 /* EventsViewController.swift in Sources */,
 				31DDC2881F1C312F003E9D83 /* AppDelegate.swift in Sources */,
+				311A3FC41F26E3940019B8E1 /* EventsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1328,7 +1358,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1357,7 +1387,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1411,7 +1441,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1440,7 +1470,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
